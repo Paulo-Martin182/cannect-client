@@ -1,1 +1,1 @@
-# Boirplate NextJS
+# Cannect Project
