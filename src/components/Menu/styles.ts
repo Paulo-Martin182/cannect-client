@@ -22,7 +22,7 @@ export const Wrapper = styled.main`
     }
 
     .menu-list-item {
-      color: ${theme.colors.white};
+      color: ${theme.colors.mainBg};
       list-style: none;
       margin: 0 16px;
       font-size: ${theme.font.sizes.medium};
@@ -41,6 +41,10 @@ export const Wrapper = styled.main`
       background-color: ${theme.colors.secondary};
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
+    }
+
+    .menu-list-item:hover {
+      color: ${theme.colors.white};
     }
 
     .menu-list-item:hover:after {
