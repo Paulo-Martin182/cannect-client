@@ -3,13 +3,13 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    background: ${theme.colors.primary};
+    background: ${theme.colors.darkBg};
     display: flex;
     width: 100%;
     height: 60px;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 12px;
+    padding: 4px 0;
 
     .menu-logoContainer {
       width: 250px;
@@ -28,6 +28,10 @@ export const Wrapper = styled.main`
       font-size: ${theme.font.sizes.medium};
       position: relative;
       cursor: pointer;
+    }
+
+    .menu-list-item:last-child {
+      margin-right: 0;
     }
 
     .menu-list-item:after {

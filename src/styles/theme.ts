@@ -22,7 +22,7 @@ export default {
     }
   },
   colors: {
-    primary: '#007c51',
+    primary: '#21976E',
     secondary: '#8eff00',
     mainBg: '#F2F2E7',
     darkBg: '#011415',
@@ -30,7 +30,8 @@ export default {
     black: '#030517',
     lightGray: '#EAEAEA',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42'
+    darkGray: '#2E2F42',
+    lightBg: '#F2F2F2'
   },
   spacings: {
     xxsmall: '0.8rem',
