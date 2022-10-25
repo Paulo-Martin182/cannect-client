@@ -3,7 +3,6 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    background: ${theme.colors.darkBg};
     display: flex;
     width: 100%;
     height: 60px;

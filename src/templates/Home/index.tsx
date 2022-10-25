@@ -1,3 +1,5 @@
+import AboutUs from 'components/AboutUs'
+import { mockAbout } from 'components/AboutUs/mockAbout'
 import Banner from 'components/Banner'
 import { mockBanner } from 'components/Banner/mockBanner'
 import CardProcess from 'components/CardProcess'
@@ -23,6 +25,10 @@ const Home = () => (
         <CardProcess />
       </Container>
     </S.SectionNews>
+
+    <Container>
+      <AboutUs {...mockAbout.attributes} />
+    </Container>
   </section>
 )
 

@@ -18,11 +18,12 @@ const GlobalStyles: GlobalStyleComponent<
       font-size: 62.5%;
     }
     body {
+      margin: 0;
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
       ${!removeBg &&
       css`
-        background-color: ${theme.colors.darkBg};
+        background: ${theme.colors.primary};
       `}
     }
   `}
