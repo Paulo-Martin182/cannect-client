@@ -11,7 +11,7 @@ export const Wrapper = styled.main`
     padding: 4px 0;
 
     .menu-logoContainer {
-      width: 250px;
+      width: 300px;
     }
 
     .menu-list {

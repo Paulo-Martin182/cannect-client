@@ -54,7 +54,7 @@ export const Wrapper = styled.main`
 
       a {
         font-size: ${theme.font.sizes.large};
-        color: ${theme.colors.lightGray};
+        color: ${theme.colors.mainBg};
       }
     }
   `}

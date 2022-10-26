@@ -11,7 +11,7 @@ const Sections = styled.section`
 
 export const SectionBanner = styled.section`
   ${({ theme }) => css`
-    margin: ${theme.spacings.medium} calc(-${theme.grid.gutter} / 2);
+    margin: ${theme.spacings.large} calc(-${theme.grid.gutter} / 2);
     ${media.greaterThan('medium')`
       margin: ${theme.spacings.large} 0;
       margin-bottom: -25px;
@@ -33,6 +33,18 @@ export const SectionNews = styled(Sections)`
       padding-bottom: 10rem;
       background-color: ${theme.colors.lightBg};
       clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    `}
+  `}
+`
+export const SectionCannabis = styled(Sections)`
+  ${({ theme }) => css`
+    ${media.greaterThan('medium')`
+      margin-bottom: 0;
+      padding-top: ${theme.spacings.medium};
+      padding-bottom: 10rem;
+      background-color: ${theme.colors.lightBg};
+      clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 0);
+
     `}
   `}
 `

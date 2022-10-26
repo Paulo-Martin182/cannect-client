@@ -7,6 +7,8 @@ import { Container } from 'components/Container'
 import Heading from 'components/Heading'
 import Menu from 'components/Menu'
 import { mockMenu } from 'components/Menu/mockMenu'
+import WhatCannabis from 'components/WhatCannabis'
+import { mockCannabis } from 'components/WhatCannabis/mockCannabis'
 
 import * as S from './styles'
 
@@ -29,6 +31,12 @@ const Home = () => (
     <Container>
       <AboutUs {...mockAbout.attributes} />
     </Container>
+
+    <S.SectionCannabis>
+      <Container>
+        <WhatCannabis {...mockCannabis.attributes} />
+      </Container>
+    </S.SectionCannabis>
   </section>
 )
 
