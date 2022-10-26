@@ -4,11 +4,14 @@ import Banner from 'components/Banner'
 import { mockBanner } from 'components/Banner/mockBanner'
 import CardProcess from 'components/CardProcess'
 import { Container } from 'components/Container'
+import Footer from 'components/Footer'
 import Heading from 'components/Heading'
 import Menu from 'components/Menu'
 import { mockMenu } from 'components/Menu/mockMenu'
+import Services from 'components/Services'
 import WhatCannabis from 'components/WhatCannabis'
 import { mockCannabis } from 'components/WhatCannabis/mockCannabis'
+import Testimonial from '../../components/Testimonial'
 
 import * as S from './styles'
 
@@ -28,7 +31,7 @@ const Home = () => (
       </Container>
     </S.SectionNews>
 
-    <Container>
+    <Container withPadding>
       <AboutUs {...mockAbout.attributes} />
     </Container>
 
@@ -37,6 +40,20 @@ const Home = () => (
         <WhatCannabis {...mockCannabis.attributes} />
       </Container>
     </S.SectionCannabis>
+
+    <S.SectionServices>
+      <Container>
+        <Services />
+      </Container>
+    </S.SectionServices>
+
+    <S.SectionNotice>
+      <Container withPadding>
+        <Testimonial />
+      </Container>
+    </S.SectionNotice>
+
+    <Footer />
   </section>
 )
 

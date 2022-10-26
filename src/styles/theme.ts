@@ -25,6 +25,7 @@ export default {
     primary: '#21976E',
     secondary: '#8eff00',
     mainBg: '#F2F2E7',
+    cardBg: '#ffffd3',
     darkBg: '#011415',
     white: '#FAFAFA',
     black: '#030517',
