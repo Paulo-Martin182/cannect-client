@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-sync-scripts */
+import { ApolloProvider } from '@apollo/client'
+import { useApollo } from 'utils/apollo'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import GlobalStyles from 'styles/global'
 import AllProviders from 'context'
 
 function App({ Component, pageProps }: AppProps) {
+  const client = useApollo(pageProps.initialApoloState)
   return (
-    <>
+    <ApolloProvider client={client}>
       <AllProviders>
         <Head>
           <title>Cannect</title>
@@ -33,7 +36,7 @@ function App({ Component, pageProps }: AppProps) {
         <GlobalStyles />
         <Component {...pageProps} />
       </AllProviders>
-    </>
+    </ApolloProvider>
   )
 }
 

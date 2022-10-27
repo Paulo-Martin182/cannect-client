@@ -1,26 +1,40 @@
 import AboutUs from 'components/AboutUs'
-import { mockAbout } from 'components/AboutUs/mockAbout'
 import Banner from 'components/Banner'
-import { mockBanner } from 'components/Banner/mockBanner'
 import CardProcess from 'components/CardProcess'
 import { Container } from 'components/Container'
 import Footer from 'components/Footer'
 import Heading from 'components/Heading'
 import Menu from 'components/Menu'
-import { mockMenu } from 'components/Menu/mockMenu'
-import Services from 'components/Services'
+import Services, { ServicesDataProps } from 'components/Services'
 import WhatCannabis from 'components/WhatCannabis'
-import { mockCannabis } from 'components/WhatCannabis/mockCannabis'
+import { AboutUsProps } from '../../components/AboutUs'
+import { BannerProps } from '../../components/Banner'
+import { MenuLinks } from '../../components/Menu'
 import Testimonial from '../../components/Testimonial'
+import { WhatCannabisProps } from '../../components/WhatCannabis'
 
 import * as S from './styles'
 
-const Home = () => (
+export type HomeTemplateProps = {
+  menuItems: MenuLinks[]
+  bannerItem: BannerProps
+  aboutItem: AboutUsProps
+  whatCannabisItem: WhatCannabisProps
+  servicesItem: ServicesDataProps[]
+}
+
+const Home = ({
+  menuItems,
+  bannerItem,
+  aboutItem,
+  whatCannabisItem,
+  servicesItem
+}: HomeTemplateProps) => (
   <section>
     <Container>
-      <Menu menuList={mockMenu} />
+      <Menu menuList={menuItems} />
       <S.SectionBanner>
-        <Banner {...mockBanner} />
+        <Banner {...bannerItem} />
       </S.SectionBanner>
     </Container>
 
@@ -32,18 +46,18 @@ const Home = () => (
     </S.SectionNews>
 
     <Container withPadding>
-      <AboutUs {...mockAbout.attributes} />
+      <AboutUs {...aboutItem} />
     </Container>
 
     <S.SectionCannabis>
       <Container>
-        <WhatCannabis {...mockCannabis.attributes} />
+        <WhatCannabis {...whatCannabisItem} />
       </Container>
     </S.SectionCannabis>
 
     <S.SectionServices>
       <Container>
-        <Services />
+        <Services attributes={servicesItem} />
       </Container>
     </S.SectionServices>
 
