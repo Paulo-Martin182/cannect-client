@@ -36,15 +36,3 @@ export async function getStaticProps() {
     }
   }
 }
-/*
-{
-    id: 1,
-    attributes: {
-      text_services:
-        '<strong>Seja listado em nossa base de\nprofissionais</strong> e receba agendamentos de pessoas que buscam nossos serviços',
-      createdAt: '2022-10-26T09:04:33.369Z',
-      updatedAt: '2022-10-26T09:07:11.774Z',
-      publishedAt: '2022-10-26T09:04:34.325Z',
-      name: 'listagem'
-    }
-  },*/
