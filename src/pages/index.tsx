@@ -7,6 +7,11 @@ import { HomeTemplateProps } from '../templates/Home'
 import { mockMenu } from 'components/Menu/mockMenu'
 import { mockServices } from 'components/Services/mockServices'
 
+const mock = mockServices.map((item) => ({
+  text_services: item.attributes.text_services,
+  name: item.attributes.name
+}))
+
 export default function Index(props: HomeTemplateProps) {
   return <Home {...props} />
 }
@@ -19,7 +24,7 @@ export async function getStaticProps() {
       bannerItem: mockBanner,
       aboutItem: mockAbout,
       whatCannabisItem: mockCannabis,
-      servicesItem: mockServices
+      servicesItem: mock
     }
   }
 }
