@@ -57,14 +57,20 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o 
 - `build-storybook`: criar a versão de compilação do storybook
 - `generate ${component-name}`: para criar um componente com a estrutura padrão do projeto
 
-## Fique por dentro
 
-Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
+### Command Generate
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  Particularmente para mim este comando é vida kkkk
+utilizo o plop para gerar a estrutura inicial de um componente, assim deixando tudo no padrão
 
-Você pode conferir [the Next.js GitHub repository](https://github.com/vercel/next.js/) - seus comentários e contribuições são bem-vindos!
+![alt text](https://github.com/Paulo-Martin182/cannect-client/tree/main/public/plop2.png)
+
+
+### Exemplo da saida do Husky no terminal
+
+![alt text](https://github.com/Paulo-Martin182/cannect-client/tree/main/public/huskyex.png)
+
+
 
 ## Estruturação geral
 
@@ -73,4 +79,11 @@ Você pode conferir [the Next.js GitHub repository](https://github.com/vercel/ne
 
 
 
+## Fique por dentro
 
+Para saber mais sobre Next.js, dê uma olhada nos seguintes recursos:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+Você pode conferir [the Next.js GitHub repository](https://github.com/vercel/next.js/) - seus comentários e contribuições são bem-vindos!

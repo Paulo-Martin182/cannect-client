@@ -1,5 +1,4 @@
-import { gql } from '@apollo/client'
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Home from 'templates/Home'
 import { GET_HOME } from '../graphql/queries/home'
 import { mockBanner } from 'components/Banner/mockBanner'

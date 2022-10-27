@@ -1,5 +1,4 @@
 import AnimatedIcon from '../animations'
-import { mockServices } from './mockServices'
 import * as S from './styles'
 
 export type ServicesDataProps = {
@@ -10,11 +9,6 @@ export type ServicesDataProps = {
 export type ServicesProps = {
   attributes: ServicesDataProps[]
 }
-
-const mock = mockServices.map((item) => ({
-  text_services: item.attributes.text_services,
-  name: item.attributes.name
-}))
 
 const Services = ({ attributes = [] }: ServicesProps) => (
   <S.Wrapper>
