@@ -63,12 +63,12 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o 
   Particularmente para mim este comando é vida kkkk
 utilizo o plop para gerar a estrutura inicial de um componente, assim deixando tudo no padrão
 
-![alt text](https://github.com/Paulo-Martin182/cannect-client/tree/main/public/plop2.png)
+![alt text](https://github.com/Paulo-Martin182/cannect-client/blob/main/public/plop2.png)
 
 
 ### Exemplo da saida do Husky no terminal
 
-![alt text](https://github.com/Paulo-Martin182/cannect-client/tree/main/public/huskyex.png)
+![alt text](https://github.com/Paulo-Martin182/cannect-client/blob/main/public/huskyex.png)
 
 
 
