@@ -34,6 +34,10 @@ entregar... mas consegui fazer algumas coisinhas para teste.
 
 ## Começando
 
+(obs): vou deixar apenas o front para rodar sem necessidade de baixar o back
+caso queira rodar com o backend, pode me chamar, pois iria precisar do dump do back.
+na home eu deixei apenas utilizando mocks, e comentado um fetch a baixo a API
+
 Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
